@@ -37,9 +37,11 @@ class Event(namedtuple('Event', ['product', 'year', 'company'])):
 
 def read_events(csvfile):
     
+    # parse year from Date received
     def _getyear(date):
         return datetime.strptime(date, '%Y-%m-%d').date().year
     
+    # convert strings to all lowercase
     def _lower(x):
         if x is None:
             return ''
