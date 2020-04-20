@@ -54,18 +54,22 @@ def read_events(csvfile):
 
 
 # Read data
-            
+# the dataset in tuple structure            
 events = tuple(read_events(inputfile))
 
-count_prod = Counter(x.product for x in events) # list of all distinct products
+# list of all distinct products
+count_prod = Counter(x.product for x in events)
 
-count_year = Counter(x.year for x in events) # list of all years
+# list of all years
+count_year = Counter(x.year for x in events)
 
 # Function for main calculation
 
 def cal_counts(count):
-    csum = 0                      # total number of complaints
-    cmax = 0                      # number of most complaints against one company
+    # initial for total number of complaints
+    csum = 0
+    # initial for the number of most complaints against one company
+    cmax = 0                     
     for (n, c) in count.items():
         if c >= cmax:
             cmax = c
@@ -78,8 +82,10 @@ fout = open(outputfile, 'w', newline='')
 
 writer = csv.writer(fout, quoting=csv.QUOTE_MINIMAL, delimiter=',')
 
+# Loop over each distinct product and year
 for k in sorted(count_prod.keys()):
     for y in sorted(count_year.keys()):
+        # company count
         count_com = Counter(x.company for x in events if x.product==k and 
                            x.year==y)
         if len(count_com) != 0:
