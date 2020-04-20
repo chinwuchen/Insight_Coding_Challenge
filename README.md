@@ -7,7 +7,7 @@ The resulting report indicates, for each financial product and year, the total n
 
 ### Input dataset
 `complaints.csv` :  input file
-`report.csv` :  output file 
+`report.csv` :  output file
 `count_complaints` : source code 
 
 ### My Repo directory structure
