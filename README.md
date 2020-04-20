@@ -19,7 +19,7 @@ I tackle the task by
 2. For each product, sort through the years to find for each year, the respective number of complaints against each company;
 3. If for a product there is no data for a certain year, then that year is skipped;
 4. Count the total number of complaints, the number of different companies against which these complaints are, 
-   and the highest number of complaints against one particular company.
+   and the highest number of complaints against one particular company;
 5. Produce the report file with each line documenting the product, the year, the total number of complaints, 
    the number of companies involved, and the percentage of the highest number of complaints against one company among all complaints,
    by dividing the highest number by the total number of complaints.
@@ -28,7 +28,7 @@ I choose to use `namedtuple` for the data structure. From the original `complain
 `Date received` (from which I parse out the year), `Product`, and `Company`.
 
 For the calculation, I use `Counter` to find unique occurences of products and of years, and then loop through product and year
-to count the number of companies and the respective number of complaints.
+to count the number of companies and the respective numbers of complaints.
    
 
 
