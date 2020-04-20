@@ -6,9 +6,9 @@ Given a government-collected file of consumers complaints against companies rega
 The resulting report indicates, for each financial product and year, the total number of complaints, number of companies receiving a complaint, and the highest percentage of complaints directed at a single company.
 
 ### Input dataset
-`complaints.csv` :  input file\n
-`report.csv` :  output file\n
-`count_complaints` : source code\n 
+- `complaints.csv` :  input file
+- `report.csv` :  output file
+- `count_complaints` : source code 
 
 ### My Repo directory structure
 
