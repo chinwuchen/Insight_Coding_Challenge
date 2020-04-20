@@ -1,4 +1,4 @@
-## Consumer Complaints - Insight Coding Challenge
+## Insight Coding Challenge- Consumer Complaints
 
 ### Problem
 Given a government-collected file of consumers complaints against companies regarding different financial products, calculate the number of complaints filed and how they're spread across different companies. 
@@ -10,6 +10,11 @@ The resulting report indicates, for each financial product and year, the total n
 - `report.csv`  output file
 - `count_complaints.py`  source code 
 - `run.sh`  shell script to run the source code with input/output arguments
+
+### Approach
+
+The task is divided into two parts. The first part is to create a data structure. The second part is the calculation.
+
 
 ### My Repo directory structure
 
