@@ -24,8 +24,7 @@ I tackle the task by
    the number of companies involved, and the percentage of the highest number of complaints against one company among all complaints,
    by dividing the highest number by the total number of complaints.
    
-I choose to use `namedtuple` for the data structure. From the original `complaints.csv` file, I keep only the relevant columns of 
-`Date received` (from which I parse out the year), `Product`, and `Company`.
+I choose to use `namedtuple` for the data structure. Using this tuple subclass, I can conveniently assign fieldnames to each attributes for later counting operations. From the original `complaints.csv` file, I keep only the relevant columns of `Date received` (from which I parse out the year), `Product`, and `Company`.
 
 For the calculation, I use `Counter` to find unique occurences of products and of years, and then loop through product and year
 to count the number of companies and the respective numbers of complaints.
